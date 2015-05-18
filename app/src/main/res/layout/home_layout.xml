@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/pager"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:text="hello"
+        />
+
+    <view
+        android:id="@+id/viewpager"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        class="com.szucie.news.view.CustomViewPager">
+        </view>
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_height="70dp"
+        android:paddingTop="2dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bottom_tab_bg">
+
+
+<!---->
+
+
+
+        <RadioButton
+            android:id="@+id/rb_news_center"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_newscenter"
+            android:text="@string/tab_news_center" />
+
+
+        <RadioButton
+            android:id="@+id/rb_smart_service"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_smartservice"
+            android:text="@string/tab_smart_service" />
+
+
+        <RadioButton
+            android:id="@+id/rb_gov_affairs"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_govaffairs"
+            android:text="@string/tab_gov_affairs" />
+
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_setting"
+            android:text="@string/tab_setting" />
+        </RadioGroup>
+
+
+</LinearLayout>
