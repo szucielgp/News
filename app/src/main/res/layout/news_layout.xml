@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:id="@+id/news_title_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+  >
+            <RadioGroup
+                android:id="@+id/news_radio"
+                android:layout_height="50dp"
+                android:paddingTop="2dp"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/news_tab_bg"
+             >
+
+
+                <!---->
+                <RadioButton
+                    android:id="@+id/rb_news_beijing"
+                    style="@style/news_tab_bottom"
+                    android:text="@string/news_beijing"
+                   />
+                <RadioButton
+                    android:id="@+id/rb_news_china"
+                    style="@style/news_tab_bottom"
+
+                    android:text="@string/news_china" />
+                <RadioButton
+                    android:id="@+id/rb_news_international"
+                    style="@style/news_tab_bottom"
+                    android:text="@string/news_international" />
+
+                <RadioButton
+                    android:id="@+id/rb_news_entertainment"
+                    style="@style/news_tab_bottom"
+                    android:text="@string/news_entertainment" />
+                <RadioButton
+                    android:id="@+id/rb_news_sports"
+                    style="@style/news_tab_bottom"
+                    android:text="@string/news_sports" />
+                <RadioButton
+                    android:id="@+id/rb_news_life"
+                    style="@style/news_tab_bottom"
+                    android:text="@string/news_life" />
+                <RadioButton
+                    android:id="@+id/rb_news_travel"
+                    style="@style/news_tab_bottom"
+                    android:text="@string/news_travel"
+                    />
+
+
+                <RadioButton
+                    android:id="@+id/rb_news_technology"
+                    style="@style/news_tab_bottom"
+                    android:text="@string/news_technology" />
+
+                <RadioButton
+                    android:id="@+id/rb_news_military"
+                    style="@style/news_tab_bottom"
+                    android:text="@string/news_military" />
+
+                <RadioButton
+                    android:id="@+id/rb_news_finance_economics"
+                    style="@style/news_tab_bottom"
+                    android:text="@string/news_finance_economics" />
+
+                <RadioButton
+                    android:id="@+id/rb_news_female"
+                    style="@style/news_tab_bottom"
+                    android:text="@string/news_female" />
+
+                <RadioButton
+                    android:id="@+id/rb_news_funny"
+                    style="@style/news_tab_bottom"
+                    android:text="@string/news_funny" />
+
+           </RadioGroup>
+
+
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "2dp"
+        android:orientation="horizontal"
+        android:background="@drawable/news_tab_bg">
+        <ImageView
+            android:id="@+id/sign_news_beijing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@color/red"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/sign_news_china"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/red"/>
+        <ImageView
+            android:id="@+id/sign_news_international"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/red"/>
+        <ImageView
+            android:id="@+id/sign_news_entertainment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/red"/>
+        <ImageView
+            android:id="@+id/sign_news_sports"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/red"/>
+        <ImageView
+            android:id="@+id/sign_news_life"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/red"/>
+        <ImageView
+            android:id="@+id/sign_news_travel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/red"/>
+        <ImageView
+            android:id="@+id/sign_news_technology"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/red"/>
+        <ImageView
+            android:id="@+id/sign_news_military"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/red"/>
+        <ImageView
+            android:id="@+id/sign_news_finance_economics"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/red"/>
+        <ImageView
+            android:id="@+id/sign_news_female"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/red"/>
+        <ImageView
+            android:id="@+id/sign_news_funny"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:src="@color/red"/>
+    </LinearLayout>
+    <view
+        android:id="@+id/news_viewpager"
+        android:layout_height="0dip"
+        android:layout_width="match_parent"
+        android:layout_weight="1.0"
+        class="com.szucie.news.view.NewsCustomViewPager">
+    </view>
+</LinearLayout>

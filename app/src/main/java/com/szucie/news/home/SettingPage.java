@@ -5,8 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.heima.news.base.BasePage;
-
 public class SettingPage extends BasePage{
 
 

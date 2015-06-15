@@ -15,4 +15,17 @@
     <string name="tab_setting">设置</string>
     <string name="share_content">千龙智慧北京新闻平台非常的好</string>
     <string name="removeItem">删除</string>
+    <string name="news_beijing">北京</string>
+    <string name="news_china">中国</string>
+    <string name="news_international">国际</string>
+    <string name="news_sports">体育</string>
+    <string name="news_life">生活</string>
+    <string name="news_technology">科技</string>
+    <string name="news_military">军事</string>
+    <string name="news_entertainment">文娱</string>
+    <string name="news_travel">旅游</string>
+    <string name="news_finance_economics">财经</string>
+    <string name="news_funny">逗乐</string>
+    <string name="news_female">女性</string>
+    <string name="title_activity_news_dtail">NewsDtailActivity</string>
 </resources>

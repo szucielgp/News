@@ -9,8 +9,8 @@ import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
 import com.szucie.news.fragment.Fragment1;
 import com.szucie.news.fragment.Fragment2;
-import com.szucie.news.fragment.MenuFragment;
 import com.szucie.news.fragment.HomeNFragment;
+import com.szucie.news.fragment.MenuFragment;
 
 
 public class MainActivity extends SlidingFragmentActivity implements MenuFragment.OnFragmentInteractionListener{
@@ -25,19 +25,21 @@ public class MainActivity extends SlidingFragmentActivity implements MenuFragmen
         //2 设置滑动菜单是在左边出来还是右边出来
         //参数可以设置左边LEFT，也可以设置右边RIGHT ，还能设置左右LEFT_RIGHT
         sm.setMode(SlidingMenu.LEFT);
+        sm.setBackgroundColor(getResources().getColor(R.color.black));
         //3 设置滑动菜单出来之后，内容页，显示的剩余宽度
         sm.setBehindOffsetRes(R.dimen.slidingmenu_offset);
         //4 设置滑动菜单的阴影 设置阴影，阴影需要在开始的时候，特别暗，慢慢的变淡
         sm.setShadowDrawable(R.drawable.shadow);
         //5 设置阴影的宽度
-        sm.setShadowWidth(R.dimen.shadow_width);
+      //  sm.setShadowWidth(R.dimen.shadow_width);
         //6 设置滑动菜单的范围
         // 第一个参数 SlidingMenu.TOUCHMODE_FULLSCREEN 可以全屏滑动
         // 第二个参数 SlidingMenu.TOUCHMODE_MARGIN 只能在边沿滑动
         // 第三个参数 SlidingMenu.TOUCHMODE_NONE 不能滑动
-        sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        sm.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);
 //        HomeFragment homeFragment  = HomeFragment.newInstance("","");
 //        StartFragment(R.id.content_frame,homeFragment);
+
 
         HomeNFragment newsFragment = new HomeNFragment();
         StartFragment(R.id.content_frame,newsFragment);

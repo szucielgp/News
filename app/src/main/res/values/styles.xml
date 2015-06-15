@@ -40,10 +40,28 @@
         <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
         <item name="android:layout_weight">1.0</item>
     </style>
+    <style name="news_tab_bottom">
+        <item name="android:textSize">@dimen/news_tab_font_size</item>
+        <item name="android:textColor">@color/news_tab_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/news_tab_indicator</item>
+        <item name="android:paddingTop">@dimen/bottom_tab_padding_up</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
 
+    </style>
     <style name="style_title_btn">
         <item name="android:textSize">16sp</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/bottom_text_color</item>
+    </style>
+    <style name="style_menu_item">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/menulistitem</item>
     </style>
 
     <style name="style_text">

@@ -1,15 +1,14 @@
-package com.szucie.news.home;
+package com.szucie.news.newscenter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
+public class NewsTravel extends NewsBasePage{
 
 
-public class SmartServicePage extends BasePage{
-
-	public SmartServicePage(Context ct) {
+	public NewsTravel(Context ct) {
 		super(ct);
 		// TODO Auto-generated constructor stub
 	}
@@ -17,7 +16,7 @@ public class SmartServicePage extends BasePage{
 	@Override
 	public View initView(LayoutInflater inflater) {
 		TextView textView = new TextView(ct);
-		textView.setText("我是服务");
+		textView.setText("旅游新闻");
 		return textView;
 	}
 
@@ -26,7 +25,5 @@ public class SmartServicePage extends BasePage{
 		// TODO Auto-generated method stub
 		
 	}
-
-	
 
 }

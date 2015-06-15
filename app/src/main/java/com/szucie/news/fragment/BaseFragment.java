@@ -1,21 +1,33 @@
 package com.szucie.news.fragment;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
+import com.szucie.news.MainActivity;
+
 /**
  * Created by ASUA on 2015/5/18.
  */
 public abstract class BaseFragment extends Fragment {
+    public Context ct ;//ct一定是在根fragment这里获取的，并且一定要在onCreate等方法中获取！！！每一个子类从他
+    //继承的时候就会拿到一个Context对象！
+    public View view;
+    public SlidingMenu sm;
 
-
+//    public  BaseFragment(SlidingMenu sm){
+//        this.sm=sm;
+//    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       initData(savedInstanceState);
+        ct = getActivity();
+        sm = ((MainActivity)getActivity()).getSlidingMenu();
+
     }
 //    public void start(){
 //        System.out.print("");
@@ -23,7 +35,9 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,  Bundle savedInstanceState) {
 
-        View  view = initView(inflater);
+        initData(savedInstanceState);
+         view = initView(inflater);
+
         return view;
     }
 

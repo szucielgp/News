@@ -4,15 +4,15 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
-public class CustomViewPager extends LazyViewPager {
-	public boolean setTouchModel = false;//控制是否可以滑动的
+public class NewsCustomViewPager extends LazyViewPager {
+	public boolean setTouchModel = true;//控制是否可以滑动的
 
-	public CustomViewPager(Context context) {
+	public NewsCustomViewPager(Context context) {
 		super(context);
 		// TODO Auto-generated constructor stub
 	}
 
-	public CustomViewPager(Context context, AttributeSet attrs) {
+	public NewsCustomViewPager(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		// TODO Auto-generated constructor stub
 	}

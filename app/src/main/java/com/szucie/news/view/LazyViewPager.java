@@ -210,11 +210,7 @@ public class LazyViewPager extends ViewGroup {
         public void onPageScrollStateChanged(int state);
     }
 
-    /**
-     * Simple implementation of the {@link android.support.v4.view.LazyViewPager.OnPageChangeListener} interface with stub
-     * implementations of each method. Extend this if you do not intend to override
-     * every method of {@link android.support.v4.view.LazyViewPager.OnPageChangeListener}.
-     */
+
     public static class SimpleOnPageChangeListener implements OnPageChangeListener {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
